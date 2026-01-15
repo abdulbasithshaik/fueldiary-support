@@ -1,0 +1,54 @@
+:root {
+    --primary: #007AFF;
+    --text: #1d1d1f;
+    --text-secondary: #86868b;
+    --bg: #ffffff;
+    --bg-light: #f5f5f7;
+}
+
+* { box-sizing: border-box; }
+body { 
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; 
+    margin: 0; color: var(--text); background: var(--bg); line-height: 1.5; 
+}
+
+.container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+.section { padding: 80px 0; }
+.bg-light { background: var(--bg-light); }
+
+/* Nav */
+.navbar { padding: 20px 0; border-bottom: 1px solid #e5e5e5; position: sticky; top: 0; background: rgba(255,255,255,0.8); backdrop-filter: blur(10px); z-index: 1000; }
+.nav-container { display: flex; justify-content: space-between; align-items: center; max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+.brand { font-weight: bold; font-size: 1.2rem; text-decoration: none; color: var(--text); }
+.nav-links a { margin-left: 20px; text-decoration: none; color: var(--text); font-size: 0.9rem; }
+
+/* Hero */
+.hero { text-align: center; padding: 100px 0 60px; background: radial-gradient(circle at top, #f0f7ff, #ffffff); }
+.hero h1 { font-size: 3.5rem; margin-bottom: 20px; letter-spacing: -0.02em; }
+.subtitle { font-size: 1.4rem; color: var(--text-secondary); max-width: 600px; margin: 0 auto 40px; }
+.hero-image-placeholder { font-size: 4rem; padding: 40px; }
+
+/* Features */
+.features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 50px; }
+.feature-card { padding: 30px; background: var(--bg-light); border-radius: 20px; text-align: left; }
+.feature-card h3 { margin-top: 0; }
+
+/* Support */
+.support-content { display: flex; flex-wrap: wrap; gap: 50px; margin-top: 40px; }
+.contact-box, .faq { flex: 1; min-width: 300px; text-align: left; }
+.btn { display: inline-block; background: var(--primary); color: white; padding: 12px 24px; border-radius: 10px; text-decoration: none; font-weight: 600; margin-top: 15px; }
+.faq-item { margin-bottom: 20px; }
+.q { font-weight: bold; display: block; margin-bottom: 5px; }
+.a { margin: 0; color: var(--text-secondary); }
+
+/* Footer */
+footer { padding: 40px 0; text-align: center; font-size: 0.8rem; color: var(--text-secondary); border-top: 1px solid #e5e5e5; margin-top: 40px; }
+.footer-links { margin-top: 10px; }
+.footer-links a { color: var(--primary); text-decoration: none; }
+
+/* Privacy Page Specific */
+.privacy-page { padding: 80px 20px; text-align: left; max-width: 800px; margin: 0 auto; }
+.last-updated { color: var(--text-secondary); margin-bottom: 40px; }
+.privacy-page h2 { border-bottom: 2px solid var(--bg-light); padding-bottom: 10px; margin-top: 40px; }
+.privacy-page ul { padding-left: 20px; }
+.privacy-page li { margin-bottom: 10px; }
