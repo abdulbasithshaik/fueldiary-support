@@ -1,86 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fuel Diary - Smart Vehicle Management</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <nav class="navbar">
-        <div class="nav-container">
-            <span class="brand">Fuel Diary</span>
+        <div class="container nav-container">
+            <a href="index.html" class="brand-wrapper">
+                <img src="assets/logo.png" alt="Fuel Diary Logo" class="logo-small">
+                <span class="brand">Fuel Diary</span>
+            </a>
             <div class="nav-links">
                 <a href="#features">Features</a>
+                <a href="#faq">FAQ</a>
                 <a href="#support">Support</a>
-                <a href="privacy.html">Privacy Policy</a>
+                <a href="privacy.html">Privacy</a>
             </div>
         </div>
     </nav>
 
     <header class="hero">
         <div class="container">
+            <img src="assets/logo.png" alt="Fuel Diary" class="logo-large">
             <h1>Your Vehicle's Best Friend.</h1>
-            <p class="subtitle">An all-in-one vehicle management and trip tracking companion designed for efficiency and absolute privacy.</p>
-            <div class="hero-image-placeholder">
-                <span>🚗 📊 📱</span>
-            </div>
+            <p class="subtitle">An all-in-one vehicle management and trip tracking companion designed for efficiency and
+                absolute privacy.</p>
         </div>
     </header>
 
     <section id="features" class="section">
         <div class="container">
-            <h2 class="section-title">Everything you need to stay on the road.</h2>
+            <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 48px;">Everything you need to stay on the
+                road.</h2>
             <div class="features-grid">
                 <div class="feature-card">
-                    <h3>⛽ Smart Fuel Logging</h3>
-                    <p>Record refuels in seconds. We automatically calculate your efficiency (KM/L, MPG) and track your consumption trends.</p>
+                    <h3>⛽ Fuel Tracking</h3>
+                    <p>Log fuel purchases to track consumption and costs. The app automatically calculates fuel
+                        efficiency and trends.</p>
                 </div>
                 <div class="feature-card">
-                    <h3>🗺️ GPS Trip Tracking</h3>
-                    <p>Log your journeys with real-time maps. Whether it's personal or business, we track distances and routes accurately.</p>
+                    <h3>🗺️ Trip Management</h3>
+                    <p>Create trips to organize your journeys. Segment your driving by Personal, Business, or Vacation
+                        categories.</p>
                 </div>
                 <div class="feature-card">
-                    <h3>🤖 AI-Powered Insights</h3>
-                    <p>Leveraging local AI models to predict your next service or refuel before you even think about it. No data ever leaves your device.</p>
+                    <h3>🛡️ Secure Documents</h3>
+                    <p>Store important documents with biometric protection. Your license and registration and insurance
+                        are safe with us.</p>
                 </div>
                 <div class="feature-card">
-                    <h3>📑 Professional Reports</h3>
-                    <p>Export beautiful PDF, CSV, or JSON reports for business reimbursements or personal archiving in one tap.</p>
+                    <h3>🤖 AI Insights</h3>
+                    <p>Get predictive maintenance alerts, proactive suggestions, and efficiency warnings powered by
+                        local on-device AI.</p>
                 </div>
                 <div class="feature-card">
-                    <h3>🛡️ Privacy First</h3>
-                    <p>No accounts. No cloud. No tracking. Your vehicle data is encrypted and stored locally using SwiftData.</p>
+                    <h3>📊 Comprehensive Reports</h3>
+                    <p>Visualize performance with refined distance tracking. Export detailed records for taxes or
+                        reimbursements.</p>
                 </div>
                 <div class="feature-card">
-                    <h3>📱 Modern iOS Experience</h3>
-                    <p>Full support for Live Activities, Widgets, Siri Shortcuts, and FaceID security for your sensitive documents.</p>
+                    <h3>📱 iOS Features</h3>
+                    <p>Full support for Live Activities, Lock Screen Widgets, Siri Shortcuts, and interactive Standby
+                        Mode.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="support" class="section bg-light">
+    <section id="faq" class="section bg-light">
         <div class="container">
-            <h2 class="section-title">Support & Help Center</h2>
-            <div class="support-content">
-                <div class="contact-box">
-                    <h3>Need Assistance?</h3>
-                    <p>Our goal is to provide the best experience. If you encounter bugs, have feature requests, or need help with exports, please contact us.</p>
-                    <a href="mailto:support@fueldiary.app" class="btn">Email Support</a>
+            <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 48px;">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <span class="faq-question">How do Reports work?</span>
+                    <p class="faq-answer">The Reports tab provides deep analysis. We automatically find your vehicle's
+                        odometer baseline to ensure stats are 100% accurate, even with sparse data.</p>
                 </div>
+                <div class="faq-item">
+                    <span class="faq-question">How does Receipt OCR work?</span>
+                    <p class="faq-answer">Tap 'Scan Receipt' to capture your receipt. The app features dynamic currency
+                        detection, automatically identifying $, €, £, and other local symbols based on your settings.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <span class="faq-question">What are AI Insights?</span>
+                    <p class="faq-answer">AI Insights predict upcoming service dates and refueling needs based on your
+                        driving patterns. This processing happens entirely on your device.</p>
+                </div>
+                <div class="faq-item">
+                    <span class="faq-question">Where is my data stored?</span>
+                    <p class="faq-answer">Fuel Diary respects your privacy. All your data is stored locally on your
+                        device or in your personal iCloud. We do not have access to your maps, routes, or logs.</p>
+                </div>
+                <div class="faq-item">
+                    <span class="faq-question">How do I export my data?</span>
+                    <p class="faq-answer">Go to Settings > Export Data. Choose CSV, PDF, or JSON format. Share the file
+                        via email, cloud storage, or any other app on your iPhone.</p>
+                </div>
+                <div class="faq-item">
+                    <span class="faq-question">What documents should I store?</span>
+                    <p class="faq-answer">We recommend storing: Driving License, Vehicle Registration, Insurance Policy,
+                        and Service Records. These are protected with biometric authentication.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                <div class="faq">
-                    <h3>Frequently Asked Questions</h3>
-                    <div class="faq-item">
-                        <span class="q">Where is my data stored?</span>
-                        <p class="a">All your data is stored locally on your device. If you use iCloud, your data is synced across your devices using Apple's private secure servers.</p>
-                    </div>
-                    <div class="faq-item">
-                        <span class="q">Can I backup my records?</span>
-                        <p class="a">Yes! Use the 'Export Data' feature in the More tab to save a JSON backup of everything. We also recommend standard iOS iCloud backups.</p>
-                    </div>
-                </div>
+    <section id="support" class="section">
+        <div class="container">
+            <div class="support-box">
+                <h2 style="margin-top: 0;">Still have questions?</h2>
+                <p style="color: var(--text-secondary); font-size: 1.1rem;">We're happy to help with any technical
+                    issues or feature requests.</p>
+                <a href="mailto:support@fueldiary.app" class="btn">Contact Developer</a>
             </div>
         </div>
     </section>
@@ -90,8 +127,10 @@
             <p>© 2026 Fuel Diary. Designed for the drive.</p>
             <div class="footer-links">
                 <a href="privacy.html">Privacy Policy</a>
+                <a href="https://github.com/abdulbasithshaik/fueldiary-ios">Source Code</a>
             </div>
         </div>
     </footer>
 </body>
+
 </html>
