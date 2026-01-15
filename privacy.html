@@ -35,6 +35,9 @@
             border-bottom: 1px solid var(--border);
             background: rgba(255, 255, 255, 0.9);
             backdrop-filter: blur(20px);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
 
         .brand-wrapper {
@@ -54,7 +57,7 @@
         }
 
         .privacy-content {
-            padding: 80px 0;
+            padding: 60px 0;
         }
 
         h1 {
@@ -71,10 +74,12 @@
             border-bottom: 2px solid var(--bg-light);
             padding-bottom: 10px;
             margin-top: 40px;
+            color: var(--primary);
         }
 
         h3 {
             margin-top: 30px;
+            font-size: 1.2rem;
         }
 
         ul {
@@ -83,6 +88,10 @@
 
         li {
             margin-bottom: 10px;
+        }
+
+        .bold {
+            font-weight: 600;
         }
 
         footer {
@@ -107,7 +116,7 @@
 
     <div class="container privacy-content">
         <h1>Privacy Policy</h1>
-        <p class="last-updated">Last Updated: December 19, 2024</p>
+        <p class="last-updated">Last Updated: January 16, 2026</p>
 
         <section>
             <h2>Introduction</h2>
@@ -119,22 +128,78 @@
             <h2>Information We Collect</h2>
             <h3>Data You Provide</h3>
             <ul>
-                <li><strong>Vehicle Information:</strong> Make, model, year, license plate number, VIN, fuel type, etc.
-                </li>
-                <li><strong>Fuel Records:</strong> Date, odometer reading, quantity, cost, location.</li>
-                <li><strong>Trip Information:</strong> Maps, dates, purposes, and routes.</li>
-                <li><strong>Photos:</strong> Trip cover photos and receipt images.</li>
+                <li><strong>Vehicle Information:</strong> Make, model, year, license plate, VIN, fuel type.</li>
+                <li><strong>Fuel Records:</strong> Date, odometer, quantity, cost, location, notes.</li>
+                <li><strong>Trip Information:</strong> Routes, dates, waypoints, notes.</li>
+                <li><strong>Expenses & Service Records.</strong></li>
+                <li><strong>Photos & Documents.</strong></li>
             </ul>
 
-            <h3>Security</h3>
-            <p><strong>All your data is stored locally on your device</strong> using Apple's encrypted SwiftData
-                framework. We do NOT store your data on external servers or share it with third parties.</p>
+            <h3>Data Collected Automatically</h3>
+            <ul>
+                <li><strong>Location Data:</strong> GPS coordinates (only during active trip tracking).</li>
+                <li><strong>Usage Data:</strong> Interaction patterns (stored locally).</li>
+                <li><strong>Device Information:</strong> iOS version, model.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>How We Use Your Data</h2>
+            <ul>
+                <li>Tracking consumption and expenses.</li>
+                <li>Calculating efficiency statistics.</li>
+                <li>Maintenance predictions (AI).</li>
+                <li>Service reminders.</li>
+                <li>Generating reports.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Data Storage & Security</h2>
+            <p class="bold">All your data is stored locally on your device using Apple's encrypted SwiftData framework.
+            </p>
+            <p>We do NOT:</p>
+            <ul>
+                <li>Store data on external servers.</li>
+                <li>Upload data to the cloud (except your personal iCloud).</li>
+                <li>Share data with third parties.</li>
+                <li>Track usage across apps/websites.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Location Services</h2>
+            <p>We access location only when you start a trip with GPS tracking enabled and the app is in use.</p>
+            <ul>
+                <li>Used for recording routes and calculating distances.</li>
+                <li>Reverse geocoding is processed on-device.</li>
+                <li>You can disable location access in iOS Settings.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>AI, Photos & Camera</h2>
+            <p>Photos are stored locally and compressed. OCR processing is done on-device using VisionKit.</p>
+            <p>AI maintenance predictions are processed locally. No data is sent to external AI services.</p>
+        </section>
+
+        <section>
+            <h2>Your Rights</h2>
+            <ul>
+                <li><strong>Access:</strong> View all data in-app.</li>
+                <li><strong>Export:</strong> CSV, PDF, JSON formats.</li>
+                <li><strong>Delete:</strong> Remove records or vehicles anytime.</li>
+                <li><strong>Opt-Out:</strong> Disable GPS or Biometrics in Settings.</li>
+            </ul>
         </section>
 
         <section>
             <h2>Contact Us</h2>
-            <p>If you have questions about this Privacy Policy or your data:</p>
-            <p>Email: support@fueldiary.app</p>
+            <p>If you have questions about this policy:</p>
+            <p>
+                <strong>Developer:</strong> Abdul Basith S<br>
+                <strong>Email:</strong> <a href="mailto:sabdulbasith@icloud.com">sabdulbasith@icloud.com</a>
+            </p>
         </section>
     </div>
 
